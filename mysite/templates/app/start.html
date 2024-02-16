@@ -1,13 +1,32 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '\app_style.css' %}">
+
+
+
 <!-- my_page.html -->
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
     <title>Hint & Guide</title>
+      <!-- Demo styles -->
+  <style>
+    body {
+        background-color: #493be0;
+    }
+  </style>
 </head>
 <body>
-    <h3>Rush * Boxing</h3>
+    <h3>Rush ▪ Boxing</h3>
     <h1>Hint & Guide</h1>
-    <a href="/app/login">START</a>
+    <div class="p-3"></div>
+    <div class="p-3"></div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="/app/login" class="btn btn-light btn-lg" role="button" style="color: #e75a18;">START</a>
+    </div>
     <!-- 페이지 내용 추가 -->
 </body>
 </html>
